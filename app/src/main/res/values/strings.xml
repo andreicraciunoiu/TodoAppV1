@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">To Do App</string>
+    <!--Login activity strings-->
+    <string name="welcome">Hello!</string>
+    <string name="log_in_username">Username</string>
+    <string name="log_in_password">Password</string>
+    <string name="register">Don\'t have an account? Sign up now!</string>
+
+    <!--Register activity strings-->
+    <string name="create_account">Create account</string>
+    <string name="details_about_create_account_functionality">After clicking the Register Button. You will be redirected to Login Screen.</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="enter_email">Enter Your Email</string>
+    <string name="enter_password">Enter Your Password</string>
+    <string name="already_have_an_account">Already have an account? Log in!</string>
+
+    <!--LoginSuccess activity strings-->
+    <string name="welcome_user">Welcome!</string>
+    <string name="email">User123@mail.com</string>
+    <string name="activity_welcome_text">Welcome,</string>
+    <string name="exclamation_mark">!</string>
+    <string name="enter_task_name">Enter a new item</string>
+    <string name="details_about_add_task_functionality">After clicking on one item of the list, it will be erased.</string>
+
+    <!--Button strings-->
+    <string name="login_button_text">Log In</string>
+    <string name="register_button_text">Register</string>
+    <string name="logout_button_text">Log Out</string>
+    <string name="add_task_button_text">Add Task</string>
+
+    <!--Logout button strings-->
+    <string name="logout_info">LOG OUT</string>
+    <string name="double_check_question">Are you sure?</string>
+    <string name="confirm_logout">Log out</string>
+    <string name="cancel_logout">Stay here</string>
+
+    <!--Register button strings-->
+    <string name="register_successful">Success!</string>
+    <string name="register_confirmation">Your Account is Successfully Created!</string>
+    <string name="continue_text">OK</string>
+
+    <!--Login button strings-->
+    <string name="login_warning">Warning!</string>
+    <string name="login_warning_message">Username or Password is wrong!</string>
+    <string name="login_success">You have logged in successfully!</string>
+
+
+</resources>
+
+

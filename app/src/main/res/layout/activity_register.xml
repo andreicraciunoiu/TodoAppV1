@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background_image_for_loginapp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="home.example.projects.todoapp.RegisterActivity">
+
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/username_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/create_account"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/hello_text_size" />
+
+        <TextView
+            android:id="@+id/information_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/register_text_name"
+            android:layout_alignStart="@+id/register_text_name"
+            android:layout_below="@+id/create_account_text"
+            android:gravity="center_horizontal"
+            android:text="@string/details_about_create_account_functionality"
+            android:textColor="@color/text_color_white" />
+
+        <EditText
+            style="@style/login_edit_text_style"
+            android:id="@+id/register_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/username_marginLeft"
+            android:layout_marginRight="@dimen/username_marginRight"
+            android:layout_marginTop="@dimen/listview_height"
+            android:drawablePadding="@dimen/login_button_top_margin"
+            android:hint="@string/enter_name" />
+
+        <EditText
+            style="@style/login_edit_text_style"
+            android:id="@+id/register_text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/register_text_name"
+            android:layout_alignStart="@+id/register_text_name"
+            android:layout_below="@+id/register_text_name"
+            android:drawablePadding="@dimen/login_button_top_margin"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            style="@style/login_edit_text_style"
+            android:id="@+id/register_text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/register_text_email"
+            android:layout_alignStart="@+id/register_text_email"
+            android:layout_below="@+id/register_text_email"
+            android:drawablePadding="@dimen/login_button_top_margin"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/register_text_password"
+            android:layout_alignStart="@+id/register_text_password"
+            android:layout_below="@+id/register_text_password"
+            android:layout_marginTop="@dimen/register_button_margin_top"
+            android:background="@drawable/sign_in_button"
+            android:text="@string/register_button_text"
+            android:textColor="@color/button_text_color" />
+
+        <TextView
+            android:id="@+id/go_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_button"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/text_size"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background_image_for_loginapp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="home.example.projects.todoapp.LoginActivity">
+
+
+        <TextView
+            android:id="@+id/hello_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/layout_marginTop_for_hello_text"
+            android:text="@string/welcome"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/hello_text_size" />
+
+
+        <EditText
+            android:id="@+id/user_id"
+            style="@style/login_edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hello_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/username_marginLeft"
+            android:layout_marginRight="@dimen/username_marginRight"
+            android:layout_marginTop="@dimen/username_marginTop"
+            android:hint="@string/log_in_username" />
+
+        <EditText
+            android:id="@+id/user_password"
+            style="@style/login_edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/user_id"
+            android:layout_alignStart="@+id/user_id"
+            android:layout_below="@+id/user_id"
+            android:backgroundTint="@color/text_color_white"
+            android:hint="@string/log_in_password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/user_password"
+            android:layout_alignStart="@+id/user_password"
+            android:layout_below="@+id/user_password"
+            android:layout_marginTop="@dimen/login_button_top_margin"
+            android:background="@drawable/sign_in_button"
+            android:text="@string/login_button_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size" />
+
+
+        <TextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in_button"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/login_details_text_padding"
+            android:text="@string/register"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size" />
+
+    </RelativeLayout>
+</ScrollView>
